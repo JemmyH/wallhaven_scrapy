@@ -15,7 +15,7 @@ SPIDER_MODULES = ['wallhaven.spiders']
 NEWSPIDER_MODULE = 'wallhaven.spiders'
 
 #  set file_path to save image locally
-LOCAL_PATH = "/Users/hujiaming/Pictures/wallhaven/urls.csv"
+FILE_NAME = "urls.csv"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'wallhaven (+http://www.yourdomain.com)'

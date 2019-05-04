@@ -5,11 +5,13 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 from scrapy.utils.project import get_project_settings
+import os
 
 
 class WallhavenPipeline(object):
+
     def __init__(self):
-        self.file_path = open(get_project_settings().get("LOCAL_PATH"), "w")
+        self.file_path = open(os.path.join(os.getcwd(), get_project_settings().get("FILE_NAME")), "w")
 
     def open_spider(self, spider):
         print("start...")
